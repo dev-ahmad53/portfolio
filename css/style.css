@@ -165,7 +165,7 @@ section {
 }
 
 .glass-card:hover {
-    border-color: rgba(124, 92, 255, 0.25); /* Border Glow purple on hover */
+    border-color: rgba(124, 92, 255, 0.25);
     transform: translateY(-6px);
 }
 
@@ -189,7 +189,7 @@ section {
 
 .btn-primary {
     background: var(--accent-yellow);
-    color: #0A0A0A; /* Legible Dark text against yellow */
+    color: #0A0A0A;
 }
 
 .btn-secondary {
@@ -203,7 +203,6 @@ section {
     color: #FFFFFF;
 }
 
-/* Glow effects for buttons */
 .btn-glow-yellow:hover {
     box-shadow: 0 0 25px var(--accent-yellow-glow);
 }
@@ -436,7 +435,7 @@ section {
     font-size: clamp(22px, 3.5vw, 40px);
     font-weight: 500;
     margin-bottom: 12px;
-    color: var(--accent-yellow); /* Yellow name tag */
+    color: var(--accent-yellow);
 }
 
 .hero-heading {
@@ -445,7 +444,7 @@ section {
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -1.5px;
-    color: #FFFFFF; /* White heading */
+    color: #FFFFFF;
     margin-bottom: 24px;
 }
 
@@ -463,7 +462,7 @@ section {
     gap: 16px;
 }
 
-/* Portrait Image Frame V2 */
+/* Portrait Image Frame V2 - Hidden on mobile via media query */
 .hero-portrait-box {
     position: relative;
     width: 100%;
@@ -1226,27 +1225,22 @@ section {
     transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* 1. Fade up reveal */
 .fade-up-scroll {
     transform: translateY(40px);
 }
 
-/* 2. Slide left reveal */
 .slide-left-scroll {
     transform: translateX(-40px);
 }
 
-/* 3. Slide right reveal */
 .slide-right-scroll {
     transform: translateX(40px);
 }
 
-/* 4. Zoom in reveal */
 .zoom-in-scroll {
     transform: scale(0.94);
 }
 
-/* Triggered Revealed State */
 .scroll-reveal.revealed {
     opacity: 1;
     transform: translate(0) scale(1);
@@ -1323,7 +1317,7 @@ section {
 }
 
 /* --- Responsive Breakpoints & Mobile Audits --- */
-
+/* Mobile view: Remove hero portrait image completely */
 @media (max-width: 1024px) {
     .container {
         padding: 0 32px;
@@ -1346,8 +1340,9 @@ section {
     .hero-actions {
         justify-content: center;
     }
+    /* Remove portrait box on tablet and mobile */
     .hero-portrait-box {
-        margin: 0 auto;
+        display: none;
     }
     .about-grid {
         grid-template-columns: 1fr;
@@ -1471,6 +1466,10 @@ section {
     }
     .hero-subtitle {
         margin-bottom: 30px;
+    }
+    /* Ensure image is hidden on smallest screens too */
+    .hero-portrait-box {
+        display: none;
     }
     .skills-grid {
         grid-template-columns: 1fr;
