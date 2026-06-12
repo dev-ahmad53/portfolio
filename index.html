@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Ali | Full Stack Developer & Marketer</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Ahmad Ali, a premium Full Stack Developer specializing in Laravel, PHP, MySQL, and modern SaaS development. View projects and skills.">
+    <meta name="keywords" content="Ahmad Ali, Laravel Developer, PHP, CS Student, Web Developer Islamabad, Full Stack Developer, 3D Portfolio">
+    <meta name="author" content="Ahmad Ali">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Three.js Background Canvas -->
+    <canvas id="three-bg-canvas"></canvas>
+
+    <!-- Custom Cursor Glow (SaaS Aesthetic) -->
+    <div id="cursor-glow"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-accent-yellow">Ahmad</span><span class="logo-accent-purple">Ali</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="cta-btn nav-cta" id="nav-connect-btn">Let's Connect</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-layout">
+                    <!-- Left: Text content -->
+                    <div class="hero-content">
+                        <div class="badge fade-in-up">
+                            <span class="badge-dot"></span>
+                            Available for Internships & Projects
+                        </div>
+                        <h1 class="hero-title fade-in-up delay-1">
+                            Hi, I'm <span class="highlight-yellow">Ahmad Ali</span>
+                        </h1>
+                        <h2 class="hero-heading fade-in-up delay-2">
+                            Crafting High-Performance <br>
+                            <span class="gradient-text">Web Applications</span>
+                        </h2>
+                        <p class="hero-subtitle fade-in-up delay-3">
+                            Full Stack Web Developer & CS Student specializing in <strong class="highlight-yellow">Laravel</strong>, PHP, and MySQL. I design clean backend logic and premium, responsive user interfaces.
+                        </p>
+                        <div class="hero-actions fade-in-up delay-4">
+                            <a href="#projects" class="btn btn-primary btn-glow-yellow">
+                                <span>Explore My Work</span>
+                                <i class="fa-solid fa-arrow-right icon-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary btn-glow-purple">
+                                <span>Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Large Portrait showcase with Gradient Frame -->
+                    <div class="hero-portrait-box fade-in-up delay-2">
+                        <div class="portrait-glowing-back"></div>
+                        <div class="portrait-frame">
+                            <img src="assets/profile.jpg" alt="Ahmad Ali Portrait" class="portrait-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Scroll Indicator -->
+            <!-- <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div> -->
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal fade-up-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag font-accent-yellow">01. Biography</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Bio Info Card (Left) -->
+                    <div class="about-card profile-card glass-card scroll-reveal slide-left-scroll">
+                        <div class="card-glow"></div>
+                        <div class="profile-header">
+                            <div class="avatar-box">
+                                <img src="assets/profile.jpg" alt="Ahmad Ali Mini Portrait" class="avatar-img">
+                            </div>
+                            <h3>Ahmad Ali</h3>
+                            <p class="highlight-yellow font-accent-space">Full Stack Developer</p>
+                        </div>
+                        <ul class="profile-details">
+                            <li>
+                                <i class="fa-solid fa-location-dot detail-icon purple-text"></i>
+                                <span>Islamabad, Pakistan</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-graduation-cap detail-icon yellow-text"></i>
+                                <div>
+                                    <strong>BS in Computer Science</strong>
+                                    <span class="block-detail">Virtual University (2023 - 2027)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-language detail-icon purple-text"></i>
+                                <span>English, Urdu, Pashto</span>
+                            </li>
+                        </ul>
+                        <div class="profile-footer">
+                            <a href="mailto:ahmadalibcs01@gmail.com" class="profile-link">
+                                <i class="fa-regular fa-envelope"></i> ahmadalibcs01@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bio Details (Right) -->
+                    <div class="about-details scroll-reveal slide-right-scroll">
+                        <div class="details-summary glass-card">
+                            <p class="summary-paragraph">
+                                I am an ambitious Computer Science student driven by a deep passion for web development. I love turning complex logic into simple, intuitive, and visually arresting user interfaces. My primary technical stack revolves around the <strong class="highlight-yellow">Laravel/PHP</strong> ecosystem combined with modern databases and responsive frontends.
+                            </p>
+                            <p class="summary-paragraph">
+                                My academic journey at Virtual University is complemented by intense hands-on practice. I enjoy breaking down business needs into organized databases, fast API logic, and responsive layouts that look spectacular on any screen size.
+                            </p>
+                        </div>
+                        
+                        <!-- Timeline / Work Experience -->
+                        <h3 class="subsection-title"><i class="fa-solid fa-briefcase subsection-icon font-accent-yellow"></i> Practical Experience</h3>
+                        
+                        <div class="experience-timeline glass-card">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-header">
+                                    <h4>Web Development Trainee</h4>
+                                    <span class="timeline-company">Softic Solution</span>
+                                </div>
+                                <p class="timeline-desc">
+                                    Gained hands-on training and professional exposure, executing standard web workflows:
+                                </p>
+                                <ul class="timeline-bullets">
+                                    <li>Developed responsive web pages using HTML, CSS, JavaScript, and Bootstrap.</li>
+                                    <li>Built user-friendly interfaces with a focus on responsiveness and usability.</li>
+                                    <li>Converted design concepts into functional, pixel-perfect web pages.</li>
+                                    <li>Ensured cross-browser compatibility and optimized performance.</li>
+                                    <li>Practiced modern frontend techniques and clean coding standards.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal fade-up-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag font-accent-purple">02. Expertise</span>
+                    <h2 class="section-title">Technical Stack</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <p class="section-description">
+                    Here are the core technologies I utilize to build modern, high-performance web applications:
+                </p>
+                
+                <div class="skills-grid">
+                    <!-- HTML5 -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(255, 235, 0, 0.15)">
+                        <div class="skill-icon-box yellow-bg-subtle">
+                            <i class="fa-brands fa-html5 skill-icon yellow-text"></i>
+                        </div>
+                        <h4>HTML5</h4>
+                        <p>Structuring semantic, accessible web content according to modern web specifications.</p>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(124, 92, 255, 0.15)">
+                        <div class="skill-icon-box purple-bg-subtle">
+                            <i class="fa-brands fa-css3-alt skill-icon purple-text"></i>
+                        </div>
+                        <h4>CSS3</h4>
+                        <p>Creating highly-styled responsive layouts with Flexbox, CSS Grid, custom keyframes, and transitions.</p>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(255, 235, 0, 0.15)">
+                        <div class="skill-icon-box yellow-bg-subtle">
+                            <i class="fa-brands fa-js skill-icon yellow-text"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <p>Implementing client-side logic, dynamic DOM manipulations, API integrations, and immersive user actions.</p>
+                    </div>
+
+                    <!-- Bootstrap 5 -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(124, 92, 255, 0.15)">
+                        <div class="skill-icon-box purple-bg-subtle">
+                            <i class="fa-brands fa-bootstrap skill-icon purple-text"></i>
+                        </div>
+                        <h4>Bootstrap 5</h4>
+                        <p>Rapidly layouting mobile-first responsive grids and implementing customizable UI components.</p>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(255, 235, 0, 0.15)">
+                        <div class="skill-icon-box yellow-bg-subtle">
+                            <i class="fa-brands fa-php skill-icon yellow-text"></i>
+                        </div>
+                        <h4>PHP</h4>
+                        <p>Writing robust server-side algorithms, managing session data, and implementing MVC architecture patterns.</p>
+                    </div>
+
+                    <!-- Laravel -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(124, 92, 255, 0.15)">
+                        <div class="skill-icon-box purple-bg-subtle">
+                            <i class="fa-brands fa-laravel skill-icon purple-text"></i>
+                        </div>
+                        <h4>Laravel</h4>
+                        <p>Leveraging Blade templates, Eloquent ORM, middleware, routing structures, and migrations for robust web backends.</p>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(255, 235, 0, 0.15)">
+                        <div class="skill-icon-box yellow-bg-subtle">
+                            <i class="fa-solid fa-database skill-icon yellow-text"></i>
+                        </div>
+                        <h4>MySQL</h4>
+                        <p>Designing relational schemas, indexing queries, optimizing joins, and maintaining transaction integrity.</p>
+                    </div>
+
+                    <!-- Git & GitHub -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(124, 92, 255, 0.15)">
+                        <div class="skill-icon-box purple-bg-subtle">
+                            <i class="fa-brands fa-github skill-icon purple-text"></i>
+                        </div>
+                        <h4>Git & GitHub</h4>
+                        <p>Managing codebase versioning, organizing repositories, branching, and collaborating on development pipelines.</p>
+                    </div>
+
+                    <!-- Responsive Design -->
+                    <div class="skill-card glass-card scroll-reveal zoom-in-scroll" data-glow-color="rgba(255, 235, 0, 0.15)">
+                        <div class="skill-icon-box yellow-bg-subtle">
+                            <i class="fa-solid fa-mobile-screen skill-icon yellow-text"></i>
+                        </div>
+                        <h4>Responsive Design</h4>
+                        <p>Ensuring fluid viewports, media query breakpoints, high-DPI scaling, and optimized mobile usability layouts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal fade-up-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag font-accent-yellow">03. Selected Work</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: POS System -->
+                    <article class="project-card glass-card scroll-reveal slide-left-scroll">
+                        <div class="project-image-box">
+                            <div class="project-overlay"></div>
+                            <div class="project-visual">
+                                <i class="fa-solid fa-cash-register project-visual-icon"></i>
+                            </div>
+                            <span class="project-category">Full Stack Application</span>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Abrar Mobile Shop POS</h3>
+                            <p class="project-description">
+                                A comprehensive, full-featured Point of Sale (POS) system designed for mobile shop management. It simplifies tracking inventory, recording sales, logging customer credits (digital khata), and running real-time financial reporting.
+                            </p>
+                            
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <span><i class="fa-solid fa-check feature-check"></i> Real-time inventory tracking</span>
+                                <span><i class="fa-solid fa-check feature-check"></i> Digital Khata & customer dues</span>
+                                <span><i class="fa-solid fa-check feature-check"></i> Remittance & financial invoices</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <span class="project-link-disabled" title="Academic / Private Client Project"><i class="fa-solid fa-lock"></i> Private Repository</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Perfumez -->
+                    <article class="project-card glass-card scroll-reveal fade-up-scroll">
+                        <div class="project-image-box">
+                            <div class="project-overlay"></div>
+                            <div class="project-visual">
+                                <i class="fa-solid fa-bottle-droplet project-visual-icon"></i>
+                            </div>
+                            <span class="project-category">E-Commerce Showcase</span>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Perfumez by Infinity Touch</h3>
+                            <p class="project-description">
+                                An aesthetic business web platform and product showcase custom-tailored for a premium perfume brand. It focuses heavily on smooth animations, visual fidelity, load-speed optimization, and intuitive checkout flows.
+                            </p>
+                            
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <span><i class="fa-solid fa-check feature-check"></i> High-fidelity catalog displays</span>
+                                <span><i class="fa-solid fa-check feature-check"></i> Performance optimized images</span>
+                                <span><i class="fa-solid fa-check feature-check"></i> Fluid layout transitions</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <span class="project-link-disabled" title="Client Project"><i class="fa-solid fa-lock"></i> Client Owned</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Imadullah Portfolio -->
+                    <article class="project-card glass-card scroll-reveal slide-right-scroll">
+                        <div class="project-image-box">
+                            <div class="project-overlay"></div>
+                            <div class="project-visual">
+                                <i class="fa-solid fa-user-tie project-visual-icon"></i>
+                            </div>
+                            <span class="project-category">Personal Portfolio</span>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Imadullah Portfolio Website</h3>
+                            <p class="project-description">
+                                A bespoke, responsive personal portfolio website designed and developed for a professional client. The application integrates client-side interactive widgets to showcase technical experience, accomplishments, and direct contact metrics.
+                            </p>
+                            
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <span><i class="fa-solid fa-check feature-check"></i> Dynamic asset presentation</span>
+                                <span><i class="fa-solid fa-check feature-check"></i> Automated lead validation</span>
+                                <span><i class="fa-solid fa-check feature-check"></i> Fully fluid responsive UI</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <span class="project-link-disabled" title="Client Project"><i class="fa-solid fa-lock"></i> Client Owned</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal fade-up-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag font-accent-purple">04. Connection</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Info Panel (Left) -->
+                    <div class="contact-info glass-card scroll-reveal slide-left-scroll">
+                        <h3 class="contact-subheading">Let's talk about your next project!</h3>
+                        <p class="contact-intro">
+                            I am actively seeking professional internship opportunities and freelancing collaborations. If you have an exciting project in mind or want to discuss Laravel integrations, drop a message!
+                        </p>
+                        
+                        <div class="info-list">
+                            <a href="mailto:ahmadalibcs01@gmail.com" class="info-item-link">
+                                <div class="info-icon-box yellow-bg-subtle">
+                                    <i class="fa-regular fa-envelope yellow-text"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span class="info-label">Email Me</span>
+                                    <span class="info-value">ahmadalibcs01@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+923425051350" class="info-item-link">
+                                <div class="info-icon-box purple-bg-subtle">
+                                    <i class="fa-solid fa-phone purple-text"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span class="info-label">Call / WhatsApp</span>
+                                    <span class="info-value">+92 342 5051350</span>
+                                </div>
+                            </a>
+
+                            <div class="info-item-link static-item">
+                                <div class="info-icon-box yellow-bg-subtle">
+                                    <i class="fa-solid fa-map-location-dot yellow-text"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Islamabad, Pakistan</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <span class="social-label">Follow / Connect</span>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/dev-ahmad53" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin-glow" aria-label="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn github-glow" aria-label="GitHub Profile">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form (Right) -->
+                    <div class="contact-form-card glass-card scroll-reveal slide-right-scroll">
+                        <form id="contact-form" class="contact-form" autocomplete="off">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <div class="input-wrapper">
+                                        <input type="text" id="name" name="name" required class="form-input" placeholder="e.g. John Doe">
+                                        <i class="fa-regular fa-user input-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <div class="input-wrapper">
+                                        <input type="email" id="email" name="email" required class="form-input" placeholder="e.g. john@example.com">
+                                        <i class="fa-regular fa-envelope input-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <div class="input-wrapper">
+                                        <input type="text" id="subject" name="subject" required class="form-input" placeholder="How can I help you?">
+                                        <i class="fa-regular fa-comment input-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message Details</label>
+                                    <div class="input-wrapper">
+                                        <textarea id="message" name="message" required class="form-input form-textarea" placeholder="Tell me about your project..."></textarea>
+                                        <i class="fa-solid fa-pencil input-icon textarea-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn btn-glow-yellow" id="form-submit-btn">
+                                <span class="submit-text">Send Message</span>
+                                <i class="fa-solid fa-paper-plane submit-icon"></i>
+                            </button>
+                            
+                            <!-- Form Success / Error Message Banner -->
+                            <div id="form-status-banner" class="form-status-banner"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Ahmad Ali. All rights reserved. Crafted with passion.</p>
+            <a href="#home" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Custom scripts -->
+    <script src="js/three-bg.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
