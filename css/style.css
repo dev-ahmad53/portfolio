@@ -1364,7 +1364,7 @@ section {
 
 @media (max-width: 768px) {
     section {
-        padding: 60px 0;
+        padding: 10px 0;
     }
     
     .section-header {
@@ -1462,7 +1462,7 @@ section {
         padding: 0 20px;
     }
     .hero-heading {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }
     .hero-subtitle {
         margin-bottom: 30px;
@@ -1484,5 +1484,25 @@ section {
         flex-direction: column;
         text-align: center;
         gap: 12px;
+    }
+}
+
+
+/* Responsive fix for all screen sizes */
+@media (max-width: 1024px) {
+    .hero-section {
+        padding-top: calc(var(--header-height) + 20px);
+        padding-bottom: 30px;
+    }
+    
+    .hero-layout {
+        gap: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: calc(var(--header-height) + 15px);
+        /* padding-bottom: 10px; */
     }
 }
